@@ -66,11 +66,8 @@ only extend that one type. This is, for example, commonly done when extending
 the model of :t3ext:`news`.
 
 If you are planing to publish your extension that extends another extensions
-model, research on `Packagist <https://packagist.org/>`__ and the
-`TER (TYPO3 extension repository) <https://extensions.typo3.org/>` for
-extensions that are already extending the model. If necessary, but them in
-the `conflict` sections of you extensions :ref:`composer-json` and
-:ref:`ext_emconf-php`.
+model, add a note to your documentation that your extension extends a model
+which may be in conflict with similar extensions which extend the same model.
 
 ..  _extending-extbase-model_find_original_model:
 
@@ -113,8 +110,8 @@ the original extension.
 Find the original repository
 ----------------------------
 
-In Extbase the repository of a model has to have the same class name as the
-model, prefixed with "Repository". It has to be located in the same domain
+In Extbase the repository of a model mostly has to have the same class name as
+the model, prefixed with "Repository". It has to be located in the same domain
 directory as the model, but in the subfolder :file:`Repository`.
 
 For example, if the model is found in :file:`Classes/Domain/Model/SomeModel.php`
