@@ -350,7 +350,7 @@ instead of `###PAGE_TSCONFIG_ID###`):
 ..  note::
 
     As we are working with pure Fluid without Extbase here the new fields can
-    be used right away. They need not be added to a model.
+    be used right away. They don't need to be added to a model.
 
 
 .. index:: pair: Content element; Data processing
